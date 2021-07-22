@@ -129,7 +129,7 @@
     <section>
       <div class="container">
         <div class="leading-36 text-3xl font-black text-blue-900">Survey</div>
-        <div class="mb-6 flex justify-between h-20">
+        <div class="mb-6 flex justify-between sm:h-20">
           <p
             class="
               text-base
@@ -138,7 +138,7 @@
               opacity-70
               self-start
               tracking-0.04
-              max-w-347
+              max-w-180
               text-primary-900
               sm:max-w-400
             "
@@ -170,7 +170,7 @@
           <div class="flex flex-col-reverse sm:flex-row">
             <div
               class="
-                pb-1
+                pb-3
                 sm:pb-3
                 md:pb-5
                 flex-auto
@@ -190,6 +190,8 @@
                   text-primary-900 text-3xl
                   tracking-0.03
                   leading-36
+                  text-center
+                  sm:text-left
                 "
               >
                 Emergency Preparedness
@@ -201,6 +203,8 @@
                   opacity-50
                   tracking-0.04
                   leading-24
+                  text-center
+                  sm:text-left
                 "
               >
                 Develop detailed plans and policies in case of emergencies
@@ -232,7 +236,8 @@
                     leading-21
                   "
                 >
-                  Requirement already met <br/> (or can be met with minimal effort)
+                  Requirement already met <br />
+                  (or can be met with minimal effort)
                 </a>
 
                 <a
@@ -349,9 +354,12 @@
                   max-w-full
                   md:max-w-400
                   max-h-300
+                  pt-3
+                  pl-4
                   md:pt-6 md:pl-5 md:pr-2
                   border
-                  pb-7
+                  pb-3
+                  sm:pb-7
                 "
               >
                 <div
@@ -457,8 +465,33 @@
             <div
               class="flex justify-between items-center max-w-full pl-1 sm:w-44"
             >
-              <p class="hidden sm:block text-sm tracking-0.01">Step 1 of 3</p>
+              <p class="hidden sm:block text-sm tracking-0.01">Step 2 of 3</p>
               <div class="flex w-20 justify-between">
+                <div
+                  class="
+                    relative
+                    flex
+                    justify-center
+                    items-center
+                    rounded-full
+                    h-4
+                    flex-16
+                    cursor-pointer
+                    my-0.5
+                  "
+                >
+                  <span
+                    class="
+                      absolute
+                      w-2.5
+                      h-2.5
+                      bg-primary-600
+                      rounded-full
+                      transition-colors
+                      duration-500
+                    "
+                  ></span>
+                </div>
                 <div
                   class="
                     relative
@@ -484,32 +517,7 @@
                     "
                   ></span>
                   <span
-                    class="
-                      absolute
-                      w-2.5
-                      h-2.5
-                      bg-primary-600
-                      rounded-full
-                      transition-colors
-                      duration-500
-                    "
-                  ></span>
-                </div>
-                <div
-                  class="
-                    relative
-                    flex
-                    justify-center
-                    items-center
-                    rounded-full
-                    h-4
-                    flex-18
-                    cursor-pointer
-                    my-0.5
-                  "
-                >
-                  <span
-                    class="absolute w-2.5 h-2.5 bg-primary-200 rounded-full"
+                    class="absolute w-2.5 h-2.5 bg-primary-600 rounded-full"
                   ></span>
                 </div>
                 <div
