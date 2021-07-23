@@ -161,13 +161,14 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="max-h-full">
       <div class="container">
-        <div class="flex justify-between h-14 mb-9">
+        <div class="flex justify-between flex-wrap sm:flex-nowrap">
           <div
             class="
-              border-l border-t border-b border-primary-200
-              rounded-l
+              border border-primary-200
+              rounded
+              sm:rounded-r-none sm:border-r-0
               text-primary-900
               md:hover:text-primary-500
               cursor-pointer
@@ -179,6 +180,9 @@
               items-center
               text-center
               w-full
+              h-16
+              mb-4
+              sm:mb-0
             "
           >
             <a class="text-xs font-medium md:hover:font-bold" href="#"
@@ -188,8 +192,12 @@
           </div>
           <div
             class="
-              border-l border-t border-b border-primary-200
+              border border-primary-200
+              rounded
+              sm:rounded-none sm:border-r-0
               text-primary-900
+              mb-4
+              sm:mb-0
               md:hover:text-primary-500
               cursor-pointer
               transition-colors
@@ -200,6 +208,7 @@
               items-center
               text-center
               w-full
+              h-16
             "
           >
             <a class="text-xs font-medium md:hover:font-bold" href="#"
@@ -208,18 +217,23 @@
           </div>
           <div
             class="
-              border-l border-t border-b border-primary-200
+              border border-primary-200
+              rounded
+              sm:rounded-none sm:border-r-0
               text-primary-900
               md:hover:text-primary-500
               cursor-pointer
               transition-colors
               duration-500
               leading-3
+              mb-4
+              sm:mb-0
               flex
               justify-center
               items-center
               text-center
               w-full
+              h-16
             "
           >
             <a class="text-xs font-medium md:hover:font-bold" href="#"
@@ -228,7 +242,9 @@
           </div>
           <div
             class="
-              border-l border-t border-b border-primary-200
+              border border-primary-200
+              rounded
+              sm:rounded-none sm:border-r-0
               text-primary-900
               md:hover:text-primary-500
               cursor-pointer
@@ -238,8 +254,11 @@
               flex
               justify-center
               items-center
+              mb-4
+              sm:mb-0
               text-center
               w-full
+              h-16
             "
           >
             <a class="text-xs font-medium md:hover:font-bold" href="#"
@@ -248,7 +267,9 @@
           </div>
           <div
             class="
-              border-r border-l border-t border-b border-primary-200
+              border border-primary-200
+              rounded
+              sm:rounded-l-none
               rounded-r
               text-primary-900
               hover:text-primary-500
@@ -263,6 +284,7 @@
               font-medium
               hover:font-bold
               w-full
+              h-16
             "
           >
             <a class="text-xs" href="#"
@@ -272,10 +294,10 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="pt-16 sm:pt-8">
       <div class="container">
         <div
-          class="
+          class="      
             sm:pl-6
             md:pl-10
             border border-primary-200
@@ -291,9 +313,11 @@
                 max-w-full
                 sm:pb-24
                 lg:pb-40
+                px-4
+                sm:px-6
               "
             >
-              <div class="flex flex-col mb-7 pt-8 pl-4 sm:pl-0">
+              <div class="flex flex-col mb-7 pt-8">
                 <p class="text-base text-primary-600 font-semibold leading-4">
                   Project Title:
                 </p>
@@ -324,7 +348,7 @@
                   text-center
                   sm:text-left
                   xl:max-w-lg
-                  mb-6
+                  mb-8
                   sm:mb-0
                 "
               >
@@ -363,7 +387,7 @@
       </div>
       <div class="pt-9 mb-10 sm:mb-20 md:mb-44">
         <div class="container">
-          <div class="-mx-2 flex flex-col sm:flex-row">
+          <div class="sm:-mx-2 flex flex-col sm:flex-row">
             <a
               href="#"
               class="
