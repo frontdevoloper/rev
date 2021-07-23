@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey</title>
     <link rel="stylesheet" href="css/iconFonts.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="px-3 md:px-0">
     <!--Header-->
@@ -15,7 +16,7 @@
           WELL
         </div>
         <div class="container h-full">
-          <div class="flex h-full md:pl-10">
+          <div class="flex h-full">
             <div
               class="
                 flex
@@ -53,7 +54,7 @@
             >
               WELL
             </div>
-            <nav class="flex-350 ml-9 hidden sm:flex items-center">
+            <nav class="max-w-sm ml-9 hidden sm:flex items-center">
               <ul class="flex justify-between items-center w-full">
                 <li
                   class="
@@ -65,10 +66,11 @@
                     duration-500
                     flex
                     items-center
+                    mr-12
                   "
                 >
                   <a class="mr-3.5" href="#">Admin</a>
-                  <span class="text-5 icon-chevron"></span>
+                  <img src="/dist/img/chevron-up.png" alt="" />
                 </li>
                 <li
                   class="
@@ -78,6 +80,7 @@
                     hover:text-primary-300
                     transition-colors
                     duration-500
+                    mr-12
                   "
                 >
                   <a href="#">People</a>
@@ -90,15 +93,14 @@
                     hover:text-primary-300
                     transition-colors
                     duration-500
+                    mr-12
                   "
                 >
                   <a href="#">Project</a>
                 </li>
                 <li
                   class="
-                    text-sm
-                    leading-21
-                    text-primary-50
+                    text-sm text-primary-50
                     hover:text-primary-300
                     transition-colors
                     duration-500
@@ -111,13 +113,13 @@
             </nav>
           </div>
         </div>
-        <div class="flex items-center flex-58 justify-between">
-          <div class="cursor-pointer">
-            <span class="text-xl icon-clobe text-primary-400"></span>
+        <div class="flex items-center">
+          <div class="cursor-pointer mr-4">
+            <img src="img/globe.png" alt="" />
           </div>
           <div class="">
             <a href="#">
-              <img class="w-8 h-8" src="img/user.png" alt="user" />
+              <img class="" src="img/user.png" alt="user" />
             </a>
           </div>
         </div>
@@ -166,20 +168,20 @@
             class="
               border-l border-t border-b border-primary-200
               rounded-l
-              flex-190
               text-primary-900
               md:hover:text-primary-500
               cursor-pointer
               transition-all
               duration-500
-              leading-12
+              leading-3
               flex
               justify-center
               items-center
               text-center
+              w-full
             "
           >
-            <a class="text-10 font-medium md:hover:font-bold" href="#"
+            <a class="text-xs font-medium md:hover:font-bold" href="#"
               >Cleaning and Sanitization <br />
               Procedures</a
             >
@@ -187,83 +189,83 @@
           <div
             class="
               border-l border-t border-b border-primary-200
-              flex-190
               text-primary-900
               md:hover:text-primary-500
               cursor-pointer
               transition-colors
               duration-500
-              leading-12
+              leading-3
               flex
               justify-center
               items-center
               text-center
+              w-full
             "
           >
-            <a class="text-10 font-medium md:hover:font-bold" href="#"
+            <a class="text-xs font-medium md:hover:font-bold" href="#"
               >Emergency Preparedness Programs</a
             >
           </div>
           <div
             class="
               border-l border-t border-b border-primary-200
-              flex-190
               text-primary-900
               md:hover:text-primary-500
               cursor-pointer
               transition-colors
               duration-500
-              leading-12
+              leading-3
               flex
               justify-center
               items-center
               text-center
+              w-full
             "
           >
-            <a class="text-10 font-medium md:hover:font-bold" href="#"
+            <a class="text-xs font-medium md:hover:font-bold" href="#"
               >Health Service Resources</a
             >
           </div>
           <div
             class="
               border-l border-t border-b border-primary-200
-              flex-190
               text-primary-900
               md:hover:text-primary-500
               cursor-pointer
               transition-colors
               duration-500
-              leading-12
+              leading-3
               flex
               justify-center
               items-center
               text-center
+              w-full
             "
           >
-            <a class="text-10 font-medium md:hover:font-bold" href="#"
+            <a class="text-xs font-medium md:hover:font-bold" href="#"
               >Air and Water Quality Management</a
             >
           </div>
           <div
             class="
-              border border-primary-200
-              flex-190
+              border-r border-l border-t border-b border-primary-200
               rounded-r
               text-primary-900
               hover:text-primary-500
               cursor-pointer
               transition-all
               duration-500
-              leading-12
+              leading-3
               flex
               justify-center
               items-center
               text-center
               font-medium
               hover:font-bold
+              w-full
             "
           >
-            <a class="text-10" href="#"
+            <a class="text-xs" href="#"
               >Stakeholder Engagement and Communication</a
             >
           </div>
@@ -281,17 +283,18 @@
             rounded-lg
           "
         >
-          <div class="flex flex-col-reverse sm:flex-row">
-            <div class="flex-auto sm:flex-48% pb-10 sm:pb-24">
-              <div class="flex flex-col mb-7 pt-6 ms:pt-8 md:pt-9 pl-4 sm:pl-0">
-                <p
-                  class="
-                    text-base text-primary-600
-                    font-semibold
-                    tracking-0.01
-                    leading-18
-                  "
-                >
+          <div class="flex flex-col-reverse sm:flex-row justify-between">
+            <div
+              class="
+                flex-auto
+                sm:w-1/2
+                max-w-full
+                sm:pb-24
+                lg:pb-40
+              "
+            >
+              <div class="flex flex-col mb-7 pt-8 pl-4 sm:pl-0">
+                <p class="text-base text-primary-600 font-semibold leading-4">
                   Project Title:
                 </p>
                 <p class="pt-1.5 text-lg text-blue-900 font-bold leading-27">
@@ -303,10 +306,10 @@
                   mb-1.5
                   font-bold
                   text-primary-900 text-3xl
-                  tracking-0.03
-                  leading-36
+                  leading-9
                   mb-5
                   text-center
+                  xl:max-w-lg
                   sm:text-left
                 "
               >
@@ -316,12 +319,13 @@
                 class="
                   text-base text-pprimary-900
                   opacity-50
-                  tracking-0.04
-                  leading-24
+                  tracking-tighter
+                  leading-6
                   text-center
                   sm:text-left
-                  px-4
-                  sm:px-0
+                  xl:max-w-lg
+                  mb-6
+                  sm:mb-0
                 "
               >
                 Provide safe and sanitary hand-washing and hand-drying supplies
@@ -332,364 +336,329 @@
             <div
               class="
                 flex-auto
-                sm:flex-52%
+                sm:w-1/2
+                max-w-full
                 bg-primary-800
                 flex
                 items-center
                 justify-center
                 sm:rounded-r-lg sm:rounded-tl-none
                 rounded-t-lg
-                py-8
-                sm:py-0
+                py-4
+                sm:
+                py-0
               "
             >
-              <div>
-                <div
-                  class="
-                    p-8
-                    pl-0
-                    pt-0
-                    relative
-                    max-w-256 max-h-300
-                    backdrop-blur-xl
-                  "
-                >
-                  <img
-                    class="relative z-10 rounded-full max-w-full"
-                    src="img/main.png"
-                    alt="image stock"
-                  />
-                  <span
-                    class="
-                      absolute
-                      bottom-0
-                      right-0
-                      w-0
-                      h-0
-                      border-b-192 border-l-192 border-tringle
-                    "
-                  ></span>
-                </div>
+              <div class="2xl:w-1/2">
+                <div>
+                <img
+                  class="w-4/5 mx-auto md:max-w-full"
+                  src="img/main-26.png"
+                  alt="image stock"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <div class="mt-7 md:mb-40 -mx-2 flex flex-col sm:flex-row">
-            <div class="px-2">
-              <a
-                href="#"
-                class="
-                  text-sm
-                  tracking-0.01
-                  block
-                  md:hover:bg-primary-500
-                  transition-all
-                  border border-primary-200
-                  rounded
-                  bg-primary-50
-                  text-center
-                  cursor-pointer
-                  md:hover:text-primary-50
-                  transition-colors
-                  duration-500
-                  text-blue-900
-                  font-black
-                  sm:flex-190
-                  leading-21
-                  h-20
-                  sm:h-40
-                  flex
-                  items-center
-                  justify-center
-                  mb-4
-                  sm:mb-0
-                "
-              >
-                Alredy met <br />(or negligible effort required)
-              </a>
-            </div>
-
-            <div class="px-2">
-              <a
-                href="#"
-                class="
-                  text-sm
-                  tracking-0.01
-                  block
-                  md:hover:bg-primary-500
-                  transition-all
-                  border border-primary-200
-                  rounded
-                  bg-primary-50
-                  text-center
-                  cursor-pointer
-                  md:hover:text-primary-50
-                  transition-colors
-                  duration-500
-                  text-blue-900
-                  font-black
-                  sm:flex-190
-                  leading-21
-                  h-20
-                  sm:h-40
-                  flex
-                  items-center
-                  justify-center
-                  mb-4
-                  sm:mb-0
-                "
-              >
-                Alredy met <br />(or negligible effort required)
-              </a>
-            </div>
-
-            <div class="px-2">
-              <a
-                href="#"
-                class="
-                  text-sm
-                  tracking-0.01
-                  block
-                  md:hover:bg-primary-500
-                  transition-all
-                  border border-primary-200
-                  rounded
-                  bg-primary-50
-                  text-center
-                  cursor-pointer
-                  md:hover:text-primary-50
-                  transition-colors
-                  duration-500
-                  text-blue-900
-                  font-black
-                  sm:flex-190
-                  leading-21
-                  h-20
-                  sm:h-40
-                  flex
-                  items-center
-                  justify-center
-                  mb-4
-                  sm:mb-0
-                "
-              >
-                Alredy met <br />(or negligible effort required)
-              </a>
-            </div>
-            <div class="px-2">
-              <a
-                href="#"
-                class="
-                  text-sm
-                  tracking-0.01
-                  block
-                  md:hover:bg-primary-500
-                  transition-all
-                  border border-primary-200
-                  rounded
-                  bg-primary-50
-                  text-center
-                  cursor-pointer
-                  md:hover:text-primary-50
-                  transition-colors
-                  duration-500
-                  text-blue-900
-                  font-black
-                  sm:flex-190
-                  leading-21
-                  h-20
-                  sm:h-40
-                  flex
-                  items-center
-                  justify-center
-                  mb-4
-                  sm:mb-0
-                "
-              >
-                Alredy met <br />(or negligible effort required)
-              </a>
-            </div>
-            <div class="px-2">
-              <a
-                href="#"
-                class="
-                  text-sm
-                  tracking-0.01
-                  block
-                  md:hover:bg-primary-500
-                  transition-all
-                  border border-primary-200
-                  rounded
-                  bg-primary-50
-                  text-center
-                  cursor-pointer
-                  md:hover:text-primary-50
-                  transition-colors
-                  duration-500
-                  text-blue-900
-                  font-black
-                  sm:flex-190
-                  leading-21
-                  h-20
-                  sm:h-40
-                  flex
-                  items-center
-                  justify-center
-                  mb-4
-                  sm:mb-0
-                "
-              >
-                Alredy met <br />(or negligible effort required)
-              </a>
-            </div>
+      </div>
+      <div class="pt-9 mb-10 sm:mb-20 md:mb-44">
+        <div class="container">
+          <div class="-mx-2 flex flex-col sm:flex-row">
+            <a
+              href="#"
+              class="
+                text-sm
+                tracking-tight
+                block
+                md:hover:bg-primary-500
+                transition-all
+                border border-primary-200
+                rounded
+                bg-primary-50
+                text-center
+                cursor-pointer
+                md:hover:text-primary-50
+                transition-colors
+                duration-500
+                text-blue-900
+                font-black
+                leading-5
+                h-20
+                sm:h-40
+                flex
+                items-center
+                justify-center
+                mb-4
+                sm:mr-2 sm:mb-0
+                w-full
+              "
+            >
+              Alredy met <br />(or negligible effort required)
+            </a>
+            <a
+              href="#"
+              class="
+                text-sm
+                tracking-tight
+                block
+                md:hover:bg-primary-500
+                transition-all
+                border border-primary-200
+                rounded
+                bg-primary-50
+                text-center
+                cursor-pointer
+                md:hover:text-primary-50
+                transition-colors
+                duration-500
+                text-blue-900
+                font-black
+                flex-auto
+                leading-5
+                h-20
+                sm:h-40
+                flex
+                items-center
+                justify-center
+                sm:mb-0 sm:ml-2 sm:mr-2
+                mb-4
+                w-full
+              "
+            >
+              Easily met
+            </a>
+            <a
+              href="#"
+              class="
+                text-sm
+                tracking-tight
+                block
+                md:hover:bg-primary-500
+                transition-all
+                border border-primary-200
+                rounded
+                bg-primary-50
+                text-center
+                cursor-pointer
+                md:hover:text-primary-50
+                transition-colors
+                duration-500
+                font-black
+                flex-auto
+                sm:flex-190
+                leading-5
+                h-20
+                sm:h-40
+                flex
+                items-center
+                justify-center
+                sm:ml-2 sm:mr-2 sm:mb-0
+                mb-4
+                w-full
+              "
+            >
+              Some effort/cost required
+            </a>
+            <a
+              href="#"
+              class="
+                text-sm
+                tracking-tighter
+                block
+                md:hover:bg-primary-500
+                transition-all
+                border border-primary-200
+                rounded
+                bg-primary-50
+                text-center
+                cursor-pointer
+                md:hover:text-primary-50
+                transition-colors
+                duration-500
+                text-blue-900
+                font-black
+                flex-auto
+                leading-5
+                h-20
+                sm:h-40
+                flex
+                items-center
+                justify-center
+                mb-4
+                sm:ml-2 sm:mr-2 sm:mb-0
+                w-full
+              "
+            >
+              Very difficult to meet
+            </a>
+            <a
+              href="#"
+              class="
+                text-sm
+                tracking-tighter
+                block
+                md:hover:bg-primary-500
+                transition-all
+                border border-primary-200
+                rounded
+                bg-primary-50
+                text-center
+                cursor-pointer
+                md:hover:text-primary-50
+                transition-colors
+                duration-500
+                text-blue-900
+                font-black
+                flex-auto
+                leading-5
+                h-20
+                sm:h-40
+                flex
+                items-center
+                justify-center
+                sm:ml-2
+                w-full
+              "
+            >
+              Cannot be met
+            </a>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <section>
-        <div class="container">
-          <div class="pt-14 pb-16">
+      <div class="container">
+        <div class="pt-14 pb-16">
+          <div
+            class="
+              flex
+              justify-between
+              items-center
+              max-w-md
+              sm:max-w-xl
+              lg:max-w-3xl
+              xl:max-w-4xl
+              mx-auto
+              text-primary-900
+              leading-21
+            "
+          >
             <div
               class="
+                cursor-pointer
                 flex
-                justify-between
                 items-center
-                max-w-400
-                sm:max-w-608
-                mx-auto
-                text-primary-900
-                leading-21
+                md:hover:text-primary-500
+                transition-colors
+                duration-500
               "
             >
-              <div
-                class="
-                  cursor-pointer
-                  flex
-                  items-center
-                  md:hover:text-primary-500
-                  transition-colors
-                  duration-500
-                "
-              >
-                <span class="mr-2.5 text-8 hidden sm:block icon-Arrow"></span>
-                <span class="text-xl sm:text-sm">Back</span>
-              </div>
-              <div
-                class="
-                  flex
-                  justify-between
-                  items-center
-                  max-w-full
-                  pl-1
-                  sm:w-44
-                "
-              >
-                <p class="hidden sm:block text-sm tracking-0.01">Step 1 of 3</p>
-                <div class="flex w-20 justify-between">
-                  <div
-                    class="
-                      relative
-                      flex
-                      justify-center
-                      items-center
-                      rounded-full
-                      h-4
-                      flex-16
-                      cursor-pointer
-                      my-0.5
-                    "
-                  >
-                    <span
-                      class="
-                        absolute
-                        w-full
-                        h-full
-                        rounded-full
-                        bg-primary-200
-                        transition-transform
-                        duration-500
-                      "
-                    ></span>
-                    <span
-                      class="
-                        absolute
-                        w-2.5
-                        h-2.5
-                        bg-primary-600
-                        rounded-full
-                        transition-colors
-                        duration-500
-                      "
-                    ></span>
-                  </div>
-                  <div
-                    class="
-                      relative
-                      flex
-                      justify-center
-                      items-center
-                      rounded-full
-                      h-4
-                      flex-18
-                      cursor-pointer
-                      my-0.5
-                    "
-                  >
-                    <span
-                      class="absolute w-2.5 h-2.5 bg-primary-200 rounded-full"
-                    ></span>
-                  </div>
-                  <div
-                    class="
-                      relative
-                      flex
-                      justify-center
-                      items-center
-                      rounded-full
-                      h-4
-                      flex-18
-                      cursor-pointer
-                      my-0.5
-                    "
-                  >
-                    <span
-                      class="absolute w-2.5 h-2.5 bg-primary-200 rounded-full"
-                    ></span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="
-                  cursor-pointer
-                  flex
-                  items-center
-                  justify-between
-                  md:hover:text-primary-500
-                  transition-colors
-                  duration-500
-                "
-              >
-                <span
+              <img
+                class="mr-2.5 hidden sm:block"
+                src="/dist/img/arrow.png"
+                alt="back"
+              />
+              <span class="text-xl sm:text-sm">Back</span>
+            </div>
+            <div
+              class="flex justify-between items-center max-w-full pl-1 sm:w-44"
+            >
+              <p class="hidden sm:block text-sm tracking-0.01">Step 1 of 3</p>
+              <div class="flex w-20 justify-between">
+                <div
                   class="
-                    hidden
-                    transform
-                    rotate-180
-                    mr-2.5
-                    icon-Arrow
-                    text-8
-                    sm:block
+                    relative
+                    flex
+                    justify-center
+                    items-center
+                    rounded-full
+                    h-4
+                    w-4
+                    cursor-pointer
+                    my-0.5
                   "
                 >
-                </span>
-                <span class="block text-xl sm:text-sm">Next</span>
+                  <span
+                    class="
+                      absolute
+                      w-full
+                      h-full
+                      rounded-full
+                      bg-primary-200
+                      transition-transform
+                      duration-500
+                    "
+                  ></span>
+                  <span
+                    class="
+                      absolute
+                      w-2.5
+                      h-2.5
+                      bg-primary-600
+                      rounded-full
+                      transition-colors
+                      duration-500
+                    "
+                  ></span>
+                </div>
+                <div
+                  class="
+                    relative
+                    flex
+                    justify-center
+                    items-center
+                    rounded-full
+                    h-4
+                    flex-18
+                    cursor-pointer
+                    my-0.5
+                  "
+                >
+                  <span
+                    class="absolute w-2.5 h-2.5 bg-primary-200 rounded-full"
+                  ></span>
+                </div>
+                <div
+                  class="
+                    relative
+                    flex
+                    justify-center
+                    items-center
+                    rounded-full
+                    h-4
+                    flex-18
+                    cursor-pointer
+                    my-0.5
+                  "
+                >
+                  <span
+                    class="absolute w-2.5 h-2.5 bg-primary-200 rounded-full"
+                  ></span>
+                </div>
               </div>
+            </div>
+
+            <div
+              class="
+                cursor-pointer
+                flex
+                items-center
+                justify-between
+                md:hover:text-primary-500
+                transition-colors
+                duration-500
+              "
+            >
+              <img
+                class="hidden sm:block transform rotate-180 mr-2"
+                src="/dist/img/arrow.png"
+                alt="next"
+              />
+              <span class="block text-xl sm:text-sm">Next</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
-    <script src="bundle.js"></script>
   </body>
 </html>

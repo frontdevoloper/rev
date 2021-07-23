@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey</title>
     <link rel="stylesheet" href="css/iconFonts.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="px-3 md:px-0">
     <!--Header-->
-    <header
-      class="-mx-3 md:mx-0 bg-primary-900 h-16 mb-5 sm:mb-12 md:mb-16 md:px-6"
-    >
+    <header class="-mx-3 md:mx-0 bg-primary-900 h-16 md:px-6">
       <div class="h-full flex justify-between items-center">
         <div class="text-26 leading-32 hidden md:block text-primary-100">
           WELL
@@ -55,7 +54,7 @@
             >
               WELL
             </div>
-            <nav class="flex-350 ml-9 hidden sm:flex items-center">
+            <nav class="max-w-sm ml-9 hidden sm:flex items-center">
               <ul class="flex justify-between items-center w-full">
                 <li
                   class="
@@ -67,10 +66,11 @@
                     duration-500
                     flex
                     items-center
+                    mr-12
                   "
                 >
                   <a class="mr-3.5" href="#">Admin</a>
-                  <span class="text-5 icon-chevron"></span>
+                  <img src="/dist/img/chevron-up.png" alt="" />
                 </li>
                 <li
                   class="
@@ -80,6 +80,7 @@
                     hover:text-primary-300
                     transition-colors
                     duration-500
+                    mr-12
                   "
                 >
                   <a href="#">People</a>
@@ -92,15 +93,14 @@
                     hover:text-primary-300
                     transition-colors
                     duration-500
+                    mr-12
                   "
                 >
                   <a href="#">Project</a>
                 </li>
                 <li
                   class="
-                    text-sm
-                    leading-21
-                    text-primary-50
+                    text-sm text-primary-50
                     hover:text-primary-300
                     transition-colors
                     duration-500
@@ -113,40 +113,42 @@
             </nav>
           </div>
         </div>
-        <div class="flex items-center flex-58 justify-between">
-          <div class="cursor-pointer">
-            <span class="text-xl icon-clobe text-primary-400"></span>
+        <div class="flex items-center">
+          <div class="cursor-pointer mr-4">
+            <img src="img/globe.png" alt="" />
           </div>
           <div class="">
             <a href="#">
-              <img class="w-8 h-8" src="img/user.png" alt="user" />
+              <img class="" src="img/user.png" alt="user" />
             </a>
           </div>
         </div>
       </div>
     </header>
     <!--main-->
-    <section>
+    <section class="px-3 xl:px-0">
       <div class="container">
-        <div class="leading-36 text-3xl font-black text-blue-900">Survey</div>
-        <div class="mb-6 flex justify-between sm:h-20">
+        <div
+          class="mb-2 sm:mb-6 md:mb-12 text-3xl pt-4 sm:pt-9 md:pt-16 font-bold"
+        >
+          Survey
+        </div>
+        <div class="mb-1.5 flex justify-between h-16">
           <p
             class="
-              text-base
-              leading-24
-              text-900
+              text-base text-medium
               opacity-70
               self-start
-              tracking-0.04
-              max-w-180
               text-primary-900
-              sm:max-w-400
+              w-64
+              sm:w-full sm:max-w-sm
+              md:max-w-md
             "
           >
             Please indicate your project's ability to meet the requirement
             described.
           </p>
-          <div class="flex flex-col text-right self-end">
+          <div class="flex flex-col text-right self-start">
             <p
               class="
                 text-xs text-primary-600
@@ -174,7 +176,10 @@
                 sm:pb-3
                 md:pb-5
                 flex-auto
-                sm:flex-50%
+                sm:w-1/2
+                max-w-full
+                sm:pb-24
+                lg:pb-40
                 px-4
                 sm:px-6
                 md:px-10
@@ -188,8 +193,7 @@
                   mb-1.5
                   font-black
                   text-primary-900 text-3xl
-                  tracking-0.03
-                  leading-36
+                  leading-9
                   text-center
                   sm:text-left
                 "
@@ -201,8 +205,7 @@
                   mb-9
                   text-base text-pprimary-900
                   opacity-50
-                  tracking-0.04
-                  leading-24
+                  leading-6
                   text-center
                   sm:text-left
                 "
@@ -216,14 +219,15 @@
                   href="#"
                   class="
                     text-sm
-                    tracking-0.01
+                    tracking-tighter
                     block
                     md:hover:bg-primary-500
                     transition-all
                     duration-500
                     border border-primary-200
                     rounded
-                    max-w-fullfull
+                    max-w-full
+                    leading-5
                     py-2
                     text-center
                     cursor-pointer
@@ -231,9 +235,7 @@
                     md:hover:text-primary-50
                     transition-colors
                     duration-500
-                    text-blue-900
                     font-black
-                    leading-21
                   "
                 >
                   Requirement already met <br />
@@ -244,24 +246,23 @@
                   href="#"
                   class="
                     text-sm
-                    tracking-0.01
+                    tracking-tighter
                     block
                     md:hover:bg-primary-500
                     transition-all
                     duration-500
                     border border-primary-200
                     rounded
-                    max-w-fullfull
+                    max-w-full
                     py-4
                     text-center
+                    leading-5
                     cursor-pointer
                     mb-2.5
                     md:hover:text-primary-50
                     transition-colors
                     duration-500
-                    text-blue-900
                     font-black
-                    leading-21
                   "
                 >
                   Requirement can be met fairly easily
@@ -271,14 +272,14 @@
                   href="#"
                   class="
                     text-sm
-                    tracking-0.01
+                    tracking-tighter
                     block
                     md:hover:bg-primary-500
                     transition-all
                     duration-500
                     border border-primary-200
                     rounded
-                    max-w-fullfull
+                    max-w-full
                     py-4
                     text-center
                     cursor-pointer
@@ -286,9 +287,8 @@
                     md:hover:text-primary-50
                     transition-colors
                     duration-500
-                    text-blue-900
                     font-black
-                    leading-21
+                    leading-5
                   "
                 >
                   Requirement can be met with some effort/cost
@@ -298,24 +298,23 @@
                   href="#"
                   class="
                     text-sm
-                    tracking-0.01
+                    tracking-tighter
                     block
                     md:hover:bg-primary-500
                     transition-all
                     duration-500
                     border border-primary-200
                     rounded
-                    max-w-fullfull
+                    max-w-full
                     py-4
                     text-center
                     cursor-pointer
                     mb-2.5
-                    md:hover:text-priamary-50
+                    md:hover:text-primary-50
                     transition-colors
                     duration-500
-                    text-blue-900
                     font-black
-                    leading-21
+                    leading-5
                   "
                 >
                   Requirement will be very difficult to meet
@@ -325,23 +324,22 @@
                   href="#"
                   class="
                     text-sm
-                    tracking-0.01
+                    tracking-tighter
                     block
                     md:hover:bg-primary-500
                     transition-all
                     duration-500
                     border border-primary-200
                     rounded
-                    max-w-fullfull
+                    max-w-full
                     py-4
                     text-center
                     cursor-pointer
                     md:hover:text-primary-50
                     transition-colors
                     duration-500
-                    text-blue-900
                     font-black
-                    leading-21
+                    leading-5
                   "
                 >
                   Requirement cannot be met
@@ -352,8 +350,6 @@
                   rounded
                   border-primary-200
                   max-w-full
-                  md:max-w-400
-                  max-h-300
                   pt-3
                   pl-4
                   md:pt-6 md:pl-5 md:pr-2
@@ -365,10 +361,10 @@
                 <div
                   class="
                     overflow-auto
-                    max-h-198
+                    max-h-48
                     text-base
-                    leading-24
-                    tracking-0.04
+                    leading-6
+                    tracking-tighter
                     text-primary-900
                     opacity-50
                     pr-2
@@ -401,10 +397,11 @@
             <div
               class="
                 py-4
-                sm:p-0 sm:max-w-1/2
+                sm:p-0
                 flex-auto
-                sm:flex-50%
-                bg-blue-300
+                sm:w-1/2
+                max-w-full
+                bg-primary-400
                 flex
                 items-center
                 justify-center
@@ -413,20 +410,12 @@
               "
             >
               <div>
-                <div
-                  class="
-                    relative
-                    max-w-200
-                    sm:max-w-450 sm:max-h-360
-                    backdrop-blur-xl
-                  "
-                >
+                <div>
                   <img
-                    class="relative max-w-full"
+                    class="w-4/5 lg:w-full max-w-full mx-auto"
                     src="img/main-29.png"
                     alt="image stock"
                   />
-                  <span class=""></span>
                 </div>
               </div>
             </div>
@@ -436,14 +425,16 @@
     </section>
     <section>
       <div class="container">
-        <div class="pt-12 pb-16">
+        <div class="pt-14 pb-16">
           <div
             class="
               flex
               justify-between
               items-center
-              max-w-400
-              sm:max-w-608
+              max-w-md
+              sm:max-w-xl
+              lg:max-w-3xl
+              xl:max-w-4xl
               mx-auto
               text-primary-900
               leading-21
@@ -459,13 +450,17 @@
                 duration-500
               "
             >
-              <span class="mr-2.5 text-8 hidden sm:block icon-Arrow"></span>
+              <img
+                class="mr-2.5 hidden sm:block"
+                src="/dist/img/arrow.png"
+                alt="back"
+              />
               <span class="text-xl sm:text-sm">Back</span>
             </div>
             <div
               class="flex justify-between items-center max-w-full pl-1 sm:w-44"
             >
-              <p class="hidden sm:block text-sm tracking-0.01">Step 2 of 3</p>
+              <p class="hidden sm:block text-sm tracking-0.01">Step 1 of 3</p>
               <div class="flex w-20 justify-between">
                 <div
                   class="
@@ -475,11 +470,22 @@
                     items-center
                     rounded-full
                     h-4
-                    flex-16
+                    w-4
                     cursor-pointer
                     my-0.5
                   "
                 >
+                  <span
+                    class="
+                      absolute
+                      w-full
+                      h-full
+                      rounded-full
+                      bg-primary-200
+                      transition-transform
+                      duration-500
+                    "
+                  ></span>
                   <span
                     class="
                       absolute
@@ -500,24 +506,13 @@
                     items-center
                     rounded-full
                     h-4
-                    flex-16
+                    flex-18
                     cursor-pointer
                     my-0.5
                   "
                 >
                   <span
-                    class="
-                      absolute
-                      w-full
-                      h-full
-                      rounded-full
-                      bg-primary-200
-                      transition-transform
-                      duration-500
-                    "
-                  ></span>
-                  <span
-                    class="absolute w-2.5 h-2.5 bg-primary-600 rounded-full"
+                    class="absolute w-2.5 h-2.5 bg-primary-200 rounded-full"
                   ></span>
                 </div>
                 <div
@@ -539,6 +534,7 @@
                 </div>
               </div>
             </div>
+
             <div
               class="
                 cursor-pointer
@@ -550,24 +546,16 @@
                 duration-500
               "
             >
-              <span
-                class="
-                  hidden
-                  transform
-                  rotate-180
-                  mr-2.5
-                  icon-Arrow
-                  text-8
-                  sm:block
-                "
-              >
-              </span>
+              <img
+                class="hidden sm:block transform rotate-180 mr-2"
+                src="/dist/img/arrow.png"
+                alt="next"
+              />
               <span class="block text-xl sm:text-sm">Next</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="bundle.js"></script>
   </body>
 </html>
